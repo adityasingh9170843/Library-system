@@ -72,9 +72,6 @@ export default function BooksReport() {
             <button onClick={() => navigate('/reports')} className="btn-primary">
               Reports
             </button>
-            <button onClick={() => navigate('/home')} className="btn-secondary">
-              Home
-            </button>
           </div>
 
           <h2 className="page-title">Master List of Books</h2>

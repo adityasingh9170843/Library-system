@@ -27,7 +27,6 @@ export default function ReportsHome(){
         <div className="top-nav">
           <button className="btn btn-primary" onClick={()=>navigate('/reports')}>Reports</button>
           <div style={{flex:1}}></div>
-          <button className="btn btn-secondary" onClick={()=>navigate('/home')}>Home</button>
           <button className="btn btn-danger" onClick={handleLogout}>Log Out</button>
         </div>
         <div className="modern-card">

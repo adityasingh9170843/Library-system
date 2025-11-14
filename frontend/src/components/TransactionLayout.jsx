@@ -51,7 +51,6 @@ export default function TransactionLayout({ children }) {
         <div className="top-nav">
           <button onClick={() => navigate('/transactions')} className="btn btn-primary">Transactions</button>
           <div style={{flex:1}}></div>
-          <button onClick={() => navigate('/home')} className="btn btn-secondary">Home</button>
           <button onClick={handleLogout} className="btn btn-danger">Log Out</button>
         </div>
 

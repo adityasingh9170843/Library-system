@@ -52,10 +52,7 @@ export default function UpdateMembership() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation */}
-        <div className="top-nav">
-          <button onClick={() => navigate('/home')} className="btn-secondary">Home</button>
-        </div>
+        {/* Top Navigation removed: Home button not required */}
 
         <h2 className="page-title">Update Membership</h2>
 

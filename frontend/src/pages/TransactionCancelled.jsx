@@ -11,12 +11,7 @@ export default function TransactionCancelled() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation */}
-        <div className="top-nav">
-          <button onClick={() => navigate('/home')} className="btn-secondary">
-            Home
-          </button>
-        </div>
+        {/* Top Navigation removed: Home button not required */}
 
         {/* Cancelled Message */}
         <div style={{ 
@@ -40,9 +35,7 @@ export default function TransactionCancelled() {
           <p style={{ fontSize: '16px', color: '#666', marginBottom: '30px' }}>
             The transaction was cancelled and no changes were made.
           </p>
-          <button onClick={() => navigate('/home')} className="btn-primary">
-            Return to Home
-          </button>
+          {/* Removed Return to Home button as requested */}
         </div>
 
         {/* Log Out Button */}

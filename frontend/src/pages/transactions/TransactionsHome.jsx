@@ -11,8 +11,7 @@ export default function TransactionsHome(){
         <button className="btn btn-primary" onClick={() => navigate('/transactions/check')}>Check Availability</button>
         <button className="btn btn-primary" onClick={() => navigate('/transactions/issue')}>Issue Book</button>
         <button className="btn btn-primary" onClick={() => navigate('/transactions/return')}>Return Book</button>
-        <button className="btn btn-primary" onClick={() => navigate('/transactions/pay-fine')}>Pay Fine</button>
-        <button className="btn btn-secondary" onClick={() => navigate('/home')}>Home</button>
+  <button className="btn btn-primary" onClick={() => navigate('/transactions/pay-fine')}>Pay Fine</button>
       </div>
     </TransactionLayout>
   )
