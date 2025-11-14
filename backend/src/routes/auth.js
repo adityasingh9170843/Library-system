@@ -9,11 +9,11 @@ const COOKIE_NAME = process.env.JWT_COOKIE_NAME || 'lib_token';
 
 const router = express.Router();
 
-// Public endpoint to create a user (admin or user)
-// Example body: { "userId": "admin", "password": "admin", "role": "admin", "name": "Admin" }
+
+
 router.post(
   '/create-user',
-  // Accept both userId and userid for convenience
+  
   body('userId').optional().isString().notEmpty(),
   body('userid').optional().isString().notEmpty(),
   body('password').isString().isLength({ min: 3 }),

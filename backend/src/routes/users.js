@@ -6,7 +6,7 @@ import { auth, requireRole } from '../middleware/auth.js';
 
 const router = express.Router();
 
-// Add or update user (admin only)
+
 router.post(
   '/',
   auth(),

@@ -35,12 +35,12 @@ export default function PayFine(){
     }
     
     try{
-      // Note: Backend expects issueId, but we're working with serialNo
-      // You may need to adjust this based on your backend implementation
+      
+      
       const data = await api('/transactions/pay-fine', { 
         method:'POST', 
         body:{ 
-          issueId: serialNo, // Adjust as needed
+          issueId: serialNo, 
           finePaid, 
           remarks 
         } 
@@ -77,7 +77,7 @@ export default function PayFine(){
               <td colSpan="2" style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>Pay Fine</td>
             </tr>
             
-            {/* Book Name */}
+            {}
             <tr style={{height:50}}>
               <td style={{width:200, paddingLeft:16, fontWeight:'bold'}}>Enter Book Name</td>
               <td style={{paddingLeft:16}}>
@@ -91,7 +91,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Author */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Enter Author</td>
               <td style={{paddingLeft:16}}>
@@ -105,7 +105,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Serial No */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Serial No</td>
               <td style={{paddingLeft:16}}>
@@ -120,7 +120,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Issue Date */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Issue Date</td>
               <td style={{paddingLeft:16}}>
@@ -133,7 +133,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Return Date */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Return Date</td>
               <td style={{paddingLeft:16}}>
@@ -146,7 +146,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Actual Return Date */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Actual Return Date</td>
               <td style={{paddingLeft:16}}>
@@ -159,7 +159,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Fine Calculated */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Fine Calculated</td>
               <td style={{paddingLeft:16}}>
@@ -174,7 +174,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Fine Paid */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Fine Paid</td>
               <td style={{paddingLeft:16}}>
@@ -188,7 +188,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Remarks */}
+            {}
             <tr style={{height:80}}>
               <td style={{paddingLeft:16, fontWeight:'bold', verticalAlign:'top', paddingTop:16}}>Remarks</td>
               <td style={{paddingLeft:16}}>
@@ -203,7 +203,7 @@ export default function PayFine(){
 
             <tr style={{height:20}}><td colSpan="2"></td></tr>
 
-            {/* Buttons */}
+            {}
             <tr style={{height:60}}>
               <td colSpan="2" style={{textAlign:'center'}}>
                 <button 
@@ -241,7 +241,7 @@ export default function PayFine(){
               </td>
             </tr>
 
-            {/* Message */}
+            {}
             {message && (
               <tr>
                 <td colSpan="2" style={{textAlign:'center', padding:'16px', color: message.includes('successfully') ? 'green' : 'red', fontWeight:'bold'}}>
@@ -253,7 +253,7 @@ export default function PayFine(){
         </table>
       </form>
 
-      {/* Removed bottom note for cleaner UI */}
+      {}
     </TransactionLayout>
   )
 }

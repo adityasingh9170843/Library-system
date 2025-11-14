@@ -45,7 +45,7 @@ export default function CheckAvailability(){
     
     try { 
       const data = await api(`/books?q=${encodeURIComponent(searchQuery)}`)
-      // Filter by status if not "All"
+      
       let filtered = data
       if(status === 'Available') filtered = data.filter(b => b.status === 'Available')
       else if(status === 'Issued') filtered = data.filter(b => b.status === 'Issued')

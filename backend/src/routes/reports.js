@@ -7,7 +7,7 @@ import dayjs from 'dayjs';
 
 const router = express.Router();
 
-// Reports accessible to both roles
+
 router.get('/books', auth(), async (_req, res) => {
   const items = await Book.find({}).sort({ serialNo: 1 });
   res.json(items);
@@ -35,7 +35,7 @@ router.get('/overdue-returns', auth(), async (_req, res) => {
 });
 
 router.get('/pending-issue-requests', auth(), async (_req, res) => {
-  // For simplicity we treat all active issues as requests already fulfilled; leaving stub here
+  
   res.json([]);
 });
 

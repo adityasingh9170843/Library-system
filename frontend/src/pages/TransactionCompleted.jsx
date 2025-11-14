@@ -11,9 +11,9 @@ export default function TransactionCompleted() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
-        {/* Success Message */}
+        {}
         <div style={{ 
           textAlign: 'center', 
           padding: '60px 20px',
@@ -35,10 +35,10 @@ export default function TransactionCompleted() {
           <p style={{ fontSize: '16px', color: '#666', marginBottom: '30px' }}>
             Your transaction has been processed.
           </p>
-          {/* Removed Return to Home button as requested */}
+          {}
         </div>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">
             Log Out

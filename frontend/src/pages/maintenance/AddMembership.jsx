@@ -54,7 +54,7 @@ export default function AddMembership() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
         <h2 className="page-title">Add Membership</h2>
 
@@ -62,7 +62,7 @@ export default function AddMembership() {
         {success && <div className="alert alert-success">{success}</div>}
 
         <form onSubmit={handleSubmit}>
-          {/* First Name */}
+          {}
           <div className="form-group">
             <label>First Name</label>
             <input
@@ -74,7 +74,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* Last Name */}
+          {}
           <div className="form-group">
             <label>Last Name</label>
             <input
@@ -86,7 +86,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* Contact Name */}
+          {}
           <div className="form-group">
             <label>Contact Name</label>
             <input
@@ -97,7 +97,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* Contact Address */}
+          {}
           <div className="form-group">
             <label>Contact Address</label>
             <input
@@ -108,7 +108,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* Aadhar Card No */}
+          {}
           <div className="form-group">
             <label>Aadhar Card No</label>
             <input
@@ -119,7 +119,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* Start Date */}
+          {}
           <div className="form-group">
             <label>Start Date</label>
             <input
@@ -131,7 +131,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* End Date */}
+          {}
           <div className="form-group">
             <label>End Date</label>
             <input
@@ -143,7 +143,7 @@ export default function AddMembership() {
             />
           </div>
 
-          {/* Membership Type */}
+          {}
           <div className="form-group">
             <label>Membership Type</label>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '8px' }}>
@@ -180,7 +180,7 @@ export default function AddMembership() {
             </div>
           </div>
 
-          {/* Action Buttons */}
+          {}
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
             <button type="button" onClick={handleCancel} className="btn-secondary">
               Cancel
@@ -191,7 +191,7 @@ export default function AddMembership() {
           </div>
         </form>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">
             Log Out

@@ -10,7 +10,7 @@ export function AuthProvider({ children }){
   })
   const [loading, setLoading] = useState(false)
 
-  // Hydrate from cookie on page refresh
+  
   useEffect(()=>{
     if(user) return
     let ignore = false

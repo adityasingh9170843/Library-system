@@ -21,7 +21,7 @@ export default function BooksReport() {
 
   return (
     <div className="sidebar-layout">
-      {/* Left Sidebar */}
+      {}
       <aside className="sidebar">
         <div className="sidebar-header">Reports</div>
         <nav className="sidebar-menu">
@@ -64,10 +64,10 @@ export default function BooksReport() {
         </nav>
       </aside>
 
-      {/* Main Content Area */}
+      {}
       <main className="main-content">
         <div className="modern-card">
-          {/* Top Navigation */}
+          {}
           <div className="top-nav">
             <button onClick={() => navigate('/reports')} className="btn-primary">
               Reports
@@ -78,7 +78,7 @@ export default function BooksReport() {
 
           {error && <div className="alert alert-error">{error}</div>}
 
-          {/* Data Table */}
+          {}
           <div style={{ overflowX: 'auto' }}>
             <table className="data-table">
               <thead>
@@ -119,7 +119,7 @@ export default function BooksReport() {
             </table>
           </div>
 
-          {/* Action Buttons */}
+          {}
           <div style={{ display: 'flex', gap: '15px', marginTop: '30px', justifyContent: 'space-between' }}>
             <button onClick={() => navigate('/reports')} className="btn-secondary">
               Back to Reports

@@ -46,7 +46,7 @@ export default function UserManagement() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
         <h2 className="page-title">User Management</h2>
 
@@ -54,7 +54,7 @@ export default function UserManagement() {
         {success && <div className="alert alert-success">{success}</div>}
 
         <form onSubmit={handleSubmit}>
-          {/* User Type Selection */}
+          {}
           <div className="form-group">
             <label>User Type</label>
             <div style={{ display: 'flex', gap: '20px' }}>
@@ -81,7 +81,7 @@ export default function UserManagement() {
             </div>
           </div>
 
-          {/* Name */}
+          {}
           <div className="form-group">
             <label>Name</label>
             <input
@@ -93,7 +93,7 @@ export default function UserManagement() {
             />
           </div>
 
-          {/* Status */}
+          {}
           <div className="form-group">
             <label>Status</label>
             <label style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -110,7 +110,7 @@ export default function UserManagement() {
             </label>
           </div>
 
-          {/* Admin */}
+          {}
           <div className="form-group">
             <label>Role</label>
             <label style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -127,7 +127,7 @@ export default function UserManagement() {
             </label>
           </div>
 
-          {/* Action Buttons */}
+          {}
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
             <button type="button" onClick={handleCancel} className="btn-secondary">
               Cancel
@@ -138,7 +138,7 @@ export default function UserManagement() {
           </div>
         </form>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">
             Log Out

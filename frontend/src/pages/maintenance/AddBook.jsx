@@ -50,7 +50,7 @@ export default function AddBook() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
         <h2 className="page-title">Add Book/Movie</h2>
 
@@ -58,7 +58,7 @@ export default function AddBook() {
         {success && <div className="alert alert-success">{success}</div>}
 
         <form onSubmit={handleSubmit}>
-          {/* Type Selection */}
+          {}
           <div className="form-group">
             <label>Type</label>
             <div style={{ display: 'flex', gap: '20px' }}>
@@ -85,7 +85,7 @@ export default function AddBook() {
             </div>
           </div>
 
-          {/* Name */}
+          {}
           <div className="form-group">
             <label>{formData.type === 'book' ? 'Book' : 'Movie'} Name *</label>
             <input
@@ -97,7 +97,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Author */}
+          {}
           <div className="form-group">
             <label>Author</label>
             <input
@@ -108,7 +108,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Category */}
+          {}
           <div className="form-group">
             <label>Category</label>
             <input
@@ -119,7 +119,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Serial Number */}
+          {}
           <div className="form-group">
             <label>Serial Number</label>
             <input
@@ -130,7 +130,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Cost */}
+          {}
           <div className="form-group">
             <label>Cost</label>
             <input
@@ -141,7 +141,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Procurement Date */}
+          {}
           <div className="form-group">
             <label>Date of Procurement</label>
             <input
@@ -152,7 +152,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Quantity */}
+          {}
           <div className="form-group">
             <label>Quantity/Copies (default: 1)</label>
             <input
@@ -164,7 +164,7 @@ export default function AddBook() {
             />
           </div>
 
-          {/* Action Buttons */}
+          {}
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
             <button type="button" onClick={handleCancel} className="btn-secondary">
               Cancel
@@ -175,7 +175,7 @@ export default function AddBook() {
           </div>
         </form>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">
             Log Out

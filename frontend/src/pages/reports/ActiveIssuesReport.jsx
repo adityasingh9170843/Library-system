@@ -21,7 +21,7 @@ export default function ActiveIssuesReport() {
 
   return (
     <div className="sidebar-layout">
-      {/* Sidebar */}
+      {}
       <aside className="sidebar">
         <div className="sidebar-header">Reports</div>
         <nav className="sidebar-menu">
@@ -34,7 +34,7 @@ export default function ActiveIssuesReport() {
         </nav>
       </aside>
 
-      {/* Main */}
+      {}
       <main className="main-content">
         <div className="top-nav">
           <button className="btn btn-primary" onClick={()=>navigate('/reports')}>Reports</button>

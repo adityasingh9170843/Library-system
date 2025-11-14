@@ -15,7 +15,7 @@ export default function TransactionLayout({ children }) {
 
   return (
     <div className="sidebar-layout">
-      {/* Sidebar */}
+      {}
       <aside className="sidebar">
         <div className="sidebar-header">Transactions</div>
         <nav className="sidebar-menu">
@@ -46,7 +46,7 @@ export default function TransactionLayout({ children }) {
         </nav>
       </aside>
 
-      {/* Main Content */}
+      {}
       <main className="main-content">
         <div className="top-nav">
           <button onClick={() => navigate('/transactions')} className="btn btn-primary">Transactions</button>

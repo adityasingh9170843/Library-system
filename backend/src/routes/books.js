@@ -5,7 +5,7 @@ import { auth, requireRole } from '../middleware/auth.js';
 
 const router = express.Router();
 
-// Get available books for dropdown
+
 router.get(
   '/available',
   auth(false),
@@ -28,7 +28,7 @@ router.get(
   }
 );
 
-// Search availability
+
 router.get(
   '/',
   auth(false),
@@ -56,7 +56,7 @@ router.get(
   }
 );
 
-// Add or update book/movie (maintenance)
+
 router.post(
   '/',
   auth(),

@@ -52,7 +52,7 @@ export default function UpdateMembership() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
         <h2 className="page-title">Update Membership</h2>
 
@@ -60,7 +60,7 @@ export default function UpdateMembership() {
         {success && <div className="alert alert-success">{success}</div>}
 
         <form onSubmit={handleSubmit}>
-          {/* Membership ID */}
+          {}
           <div className="form-group">
             <label>Membership ID</label>
             <input
@@ -72,7 +72,7 @@ export default function UpdateMembership() {
             />
           </div>
 
-          {/* First Name */}
+          {}
           <div className="form-group">
             <label>First Name</label>
             <input
@@ -83,7 +83,7 @@ export default function UpdateMembership() {
             />
           </div>
 
-          {/* Contact Name */}
+          {}
           <div className="form-group">
             <label>Contact Name</label>
             <input
@@ -94,7 +94,7 @@ export default function UpdateMembership() {
             />
           </div>
 
-          {/* Contact Address */}
+          {}
           <div className="form-group">
             <label>Contact Address</label>
             <input
@@ -105,7 +105,7 @@ export default function UpdateMembership() {
             />
           </div>
 
-          {/* Aadhar Card No */}
+          {}
           <div className="form-group">
             <label>Aadhar Card No</label>
             <input
@@ -116,19 +116,19 @@ export default function UpdateMembership() {
             />
           </div>
 
-          {/* Start Date */}
+          {}
           <div className="form-group">
             <label>Start Date</label>
             <input type="date" name="startDate" value={formData.startDate} onChange={handleChange} />
           </div>
 
-          {/* End Date */}
+          {}
           <div className="form-group">
             <label>End Date</label>
             <input type="date" name="endDate" value={formData.endDate} onChange={handleChange} />
           </div>
 
-          {/* Status */}
+          {}
           <div className="form-group">
             <label>Status</label>
             <select name="status" value={formData.status} onChange={handleChange}>
@@ -138,7 +138,7 @@ export default function UpdateMembership() {
             </select>
           </div>
 
-          {/* Amount Pending */}
+          {}
           <div className="form-group">
             <label>Amount Pending</label>
             <input
@@ -149,14 +149,14 @@ export default function UpdateMembership() {
             />
           </div>
 
-          {/* Action Buttons */}
+          {}
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
             <button type="button" onClick={handleCancel} className="btn-secondary">Cancel</button>
             <button type="submit" className="btn-primary">Confirm</button>
           </div>
         </form>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">Log Out</button>
         </div>

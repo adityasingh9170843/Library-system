@@ -28,12 +28,12 @@ export default function IssueBook(){
     fetchAvailableBooks()
   }, [])
 
-  // Auto-update return date when issue date changes (max 15 days)
+  
   useEffect(()=>{
     setReturnDate(dayjs(issueDate).add(15, 'day').format('YYYY-MM-DD'))
   },[issueDate])
 
-  // Update author when book is selected
+  
   useEffect(() => {
     if (selectedBook) {
       const book = availableBooks.find(b => b.serialNo === selectedBook)
@@ -72,7 +72,7 @@ export default function IssueBook(){
         } 
       })
       setMessage('Book issued successfully!')
-      // Reset form
+      
       setTimeout(() => {
         setSelectedBook('')
         setAuthor('')
@@ -100,7 +100,7 @@ export default function IssueBook(){
               <td colSpan="2" style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>Book Issue</td>
             </tr>
             
-            {/* Book Name Dropdown */}
+            {}
             <tr style={{height:50}}>
               <td style={{width:200, paddingLeft:16, fontWeight:'bold'}}>Enter Book Name</td>
               <td style={{paddingLeft:16}}>
@@ -120,7 +120,7 @@ export default function IssueBook(){
               </td>
             </tr>
 
-            {/* Author */}
+            
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Enter Author</td>
               <td style={{paddingLeft:16}}>
@@ -134,7 +134,7 @@ export default function IssueBook(){
               </td>
             </tr>
 
-            {/* Membership ID */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Membership ID</td>
               <td style={{paddingLeft:16}}>
@@ -149,7 +149,7 @@ export default function IssueBook(){
               </td>
             </tr>
 
-            {/* Issue Date */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Issue Date</td>
               <td style={{paddingLeft:16}}>
@@ -164,7 +164,7 @@ export default function IssueBook(){
               </td>
             </tr>
 
-            {/* Return Date */}
+            {}
             <tr style={{height:50}}>
               <td style={{paddingLeft:16, fontWeight:'bold'}}>Return Date</td>
               <td style={{paddingLeft:16}}>
@@ -178,7 +178,7 @@ export default function IssueBook(){
               </td>
             </tr>
 
-            {/* Remarks */}
+            {}
             <tr style={{height:80}}>
               <td style={{paddingLeft:16, fontWeight:'bold', verticalAlign:'top', paddingTop:16}}>Remarks</td>
               <td style={{paddingLeft:16}}>
@@ -193,7 +193,7 @@ export default function IssueBook(){
 
             <tr style={{height:20}}><td colSpan="2"></td></tr>
 
-            {/* Buttons */}
+            {}
             <tr style={{height:60}}>
               <td colSpan="2" style={{textAlign:'center'}}>
                 <button 
@@ -231,7 +231,7 @@ export default function IssueBook(){
               </td>
             </tr>
 
-            {/* Message */}
+            {}
             {message && (
               <tr>
                 <td colSpan="2" style={{textAlign:'center', padding:'16px', color: message.includes('successfully') ? 'green' : 'red', fontWeight:'bold'}}>
@@ -243,7 +243,7 @@ export default function IssueBook(){
         </table>
       </form>
 
-      {/* Removed bottom note for cleaner UI */}
+      {}
     </TransactionLayout>
   )
 }

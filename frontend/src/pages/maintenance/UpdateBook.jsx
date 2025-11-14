@@ -48,7 +48,7 @@ export default function UpdateBook() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
         <h2 className="page-title">Update Book/Movie</h2>
 
@@ -56,7 +56,7 @@ export default function UpdateBook() {
         {success && <div className="alert alert-success">{success}</div>}
 
         <form onSubmit={handleSubmit}>
-          {/* Type Selection */}
+          {}
           <div className="form-group">
             <label>Type</label>
             <div style={{ display: 'flex', gap: '20px' }}>
@@ -81,7 +81,7 @@ export default function UpdateBook() {
             </div>
           </div>
 
-          {/* Book/Movie Name */}
+          {}
           <div className="form-group">
             <label>Book/Movie Name</label>
             <input
@@ -93,7 +93,7 @@ export default function UpdateBook() {
             />
           </div>
 
-          {/* Serial No */}
+          {}
           <div className="form-group">
             <label>Serial No</label>
             <input
@@ -105,7 +105,7 @@ export default function UpdateBook() {
             />
           </div>
 
-          {/* Status */}
+          {}
           <div className="form-group">
             <label>Status</label>
             <select name="status" value={formData.status} onChange={handleChange}>
@@ -116,20 +116,20 @@ export default function UpdateBook() {
             </select>
           </div>
 
-          {/* Date */}
+          {}
           <div className="form-group">
             <label>Date</label>
             <input type="date" name="date" value={formData.date} onChange={handleChange} />
           </div>
 
-          {/* Action Buttons */}
+          {}
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
             <button type="button" onClick={handleCancel} className="btn-secondary">Cancel</button>
             <button type="submit" className="btn-primary">Confirm</button>
           </div>
         </form>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">Log Out</button>
         </div>

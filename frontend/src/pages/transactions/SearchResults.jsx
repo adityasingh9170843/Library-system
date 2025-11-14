@@ -85,7 +85,7 @@ export default function SearchResults(){
         </tbody>
       </table>
 
-      {/* Removed bottom note for cleaner UI */}
+      {}
     </TransactionLayout>
   )
 }

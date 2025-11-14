@@ -8,13 +8,13 @@ import Issue from '../models/Issue.js';
 
 const router = express.Router();
 
-// Helper: fine calculation (1 per day late)
+
 function calcFine(plannedReturn, actualReturn) {
   const lateDays = Math.max(0, dayjs(actualReturn).startOf('day').diff(dayjs(plannedReturn).startOf('day'), 'day'));
-  return lateDays * 5; // Rs.5 per day
+  return lateDays * 5; 
 }
 
-// Check availability validation: one of text/dropdown required is handled in frontend; backend supports query on serialNo or name.
+
 router.get('/availability', auth(), async (req, res) => {
   const { q } = req.query;
   if (!q) return res.status(400).json({ message: 'Provide text or dropdown value' });
@@ -22,7 +22,7 @@ router.get('/availability', auth(), async (req, res) => {
   res.json(items);
 });
 
-// Issue a book
+
 router.post(
   '/issue',
   auth(),
@@ -68,7 +68,7 @@ router.post(
   }
 );
 
-// Return a book -> calculates fine and requires confirm to pay later
+
 router.post(
   '/return',
   auth(),
@@ -87,7 +87,7 @@ router.post(
     issue.fineCalculated = fine;
     await issue.save();
 
-    // book can be made available after fine process completes
+    
     return res.json({
       transaction: issue,
       payFineRequired: fine > 0
@@ -95,7 +95,7 @@ router.post(
   }
 );
 
-// Pay fine (or confirm zero fine) and close transaction
+
 router.post(
   '/pay-fine',
   auth(),

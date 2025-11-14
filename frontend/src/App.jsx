@@ -78,7 +78,7 @@ export default function App() {
       <Route path="/admin" element={<Protected role="admin"><HomeAdmin /></Protected>} />
       <Route path="/user" element={<Protected><HomeUser /></Protected>} />
 
-      {/* Maintenance */}
+      {}
       <Route path="/maintenance" element={<Protected role="admin"><Maintenance /></Protected>} />
       <Route path="/maintenance/books/add" element={<Protected role="admin"><AddBook /></Protected>} />
       <Route path="/maintenance/books/update" element={<Protected role="admin"><UpdateBook /></Protected>} />
@@ -87,7 +87,7 @@ export default function App() {
       <Route path="/maintenance/users/add" element={<Protected role="admin"><UserManagement /></Protected>} />
       <Route path="/maintenance/users/update" element={<Protected role="admin"><UserManagement /></Protected>} />
 
-      {/* Transactions */}
+      {}
   <Route path="/transactions" element={<Protected><TransactionsHome /></Protected>} />
       <Route path="/transactions/check" element={<Protected><CheckAvailability /></Protected>} />
       <Route path="/transactions/issue" element={<Protected><IssueBook /></Protected>} />
@@ -95,7 +95,7 @@ export default function App() {
       <Route path="/transactions/pay-fine" element={<Protected><PayFine /></Protected>} />
   <Route path="/transactions/search-results" element={<Protected><SearchResults /></Protected>} />
 
-  {/* Reports */}
+  {}
   <Route path="/reports" element={<Protected><ReportsHome /></Protected>} />
       <Route path="/reports/books" element={<Protected><BooksReport /></Protected>} />
       <Route path="/reports/movies" element={<Protected><MoviesReport /></Protected>} />
@@ -104,7 +104,7 @@ export default function App() {
       <Route path="/reports/overdue" element={<Protected><OverdueReport /></Protected>} />
   <Route path="/reports/issue-requests" element={<Protected><IssueRequestsReport /></Protected>} />
 
-  {/* Confirmation Pages */}
+  {}
   <Route path="/transaction-cancelled" element={<TransactionCancelled />} />
   <Route path="/transaction-completed" element={<TransactionCompleted />} />
   <Route path="/logged-out" element={<LoggedOut />} />

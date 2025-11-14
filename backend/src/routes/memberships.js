@@ -7,13 +7,13 @@ import Membership from '../models/Membership.js';
 const router = express.Router();
 
 function calcEndDate(startDate, duration) {
-  // duration: '6m' | '1y' | '2y'
+  
   if (duration === '1y') return dayjs(startDate).add(1, 'year').toDate();
   if (duration === '2y') return dayjs(startDate).add(2, 'year').toDate();
   return dayjs(startDate).add(6, 'month').toDate();
 }
 
-// Add Membership
+
 router.post(
   '/',
   auth(),
@@ -34,7 +34,7 @@ router.post(
   }
 );
 
-// Update Membership (extend or cancel)
+
 router.put(
   '/:id',
   auth(),

@@ -8,7 +8,7 @@ export const apiClient = axios.create({
   headers: { 'Content-Type': 'application/json' }
 })
 
-// Backwards compatible helper used across pages
+
 export async function api(path, { method='GET', body, headers } = {}){
   const res = await apiClient.request({ url: path, method, data: body, headers })
   return res.data

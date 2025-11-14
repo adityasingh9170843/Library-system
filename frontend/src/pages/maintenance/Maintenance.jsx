@@ -35,11 +35,11 @@ export default function Maintenance() {
   return (
     <div className="page-container">
       <div className="modern-card">
-        {/* Top Navigation removed: Home button not required */}
+        {}
 
         <h2 className="page-title">Maintenance</h2>
 
-        {/* Maintenance Menu Grid */}
+        {}
         <div className="menu-grid">
           {maintenanceItems.map((section, idx) => (
             <div key={idx} className="modern-card" style={{ padding: '20px' }}>
@@ -75,7 +75,7 @@ export default function Maintenance() {
           ))}
         </div>
 
-        {/* Log Out Button */}
+        {}
         <div style={{ marginTop: '40px', textAlign: 'right' }}>
           <button onClick={handleLogout} className="btn-danger">
             Log Out
